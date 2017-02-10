@@ -22,7 +22,7 @@ public class Conn {
     
     public Connection Conn(){
         try{
-            if(connection != null){
+            if(connection == null){
                 Class.forName(dbClass);
                 connection = DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
                 System.out.println("connected");
