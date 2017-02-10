@@ -85,7 +85,7 @@ public class DaoMahasiswa implements ImplementMahasiswa {
             ps.setString(1, mahasiswa.getNpm());
             ps.setString(2, mahasiswa.getNama());
             ps.setString(3, mahasiswa.getTempatLahir());
-            ps.setDate(4, (Date) new java.util.Date(mahasiswa.getTanggalLahir().getTime()));
+            ps.setDate(4, (Date) new java.sql.Date(mahasiswa.getTanggalLahir().getTime()));
             ps.setString(5, mahasiswa.getJenisKelamin());
             ps.setString(6, mahasiswa.getAlamat());
             
